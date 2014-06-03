@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<g id="Sword">
+	<g>
+		<polygon style="fill:#C0CACE;" points="23.768,6.216 23.768,28.514 27.02,28.514 27.02,10.396 		"/>
+		<polygon style="fill:#D0DCE2;" points="20.516,10.396 20.516,28.514 23.768,28.514 23.768,6.216 		"/>
+	</g>
+	<polyline style="fill:#261C11;" points="22.357,37.563 21.445,31.301 26.09,31.301 25.045,37.563 	"/>
+	<circle style="fill:#261C11;" cx="23.651" cy="39.345" r="2.439"/>
+	<g>
+		<polygon style="fill:#EAAE68;" points="17.729,28.514 17.264,31.301 23.768,31.301 23.768,28.514 		"/>
+		<polygon style="fill:#D8A55E;" points="29.807,28.514 23.768,28.514 23.768,31.301 30.735,31.301 		"/>
+	</g>
+	<g>
+		<path style="fill:#EAAE68;" d="M22.025,39.345c0,0.898,0.729,1.626,1.626,1.626v-3.252C22.754,37.719,22.025,38.447,22.025,39.345
+			z"/>
+		<path style="fill:#D8A55E;" d="M23.651,37.719v3.252c0.897,0,1.626-0.728,1.626-1.626C25.277,38.447,24.549,37.719,23.651,37.719z
+			"/>
+	</g>
+</g>
+</svg>

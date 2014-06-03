@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<g id="Podium">
+	<g>
+		<rect x="6.946" y="19.607" style="fill:#D0DCE2;" width="5.685" height="16.021"/>
+		<rect x="12.631" y="19.607" style="fill:#C0CACE;" width="5.685" height="16.021"/>
+	</g>
+	<g>
+		<rect x="29.685" y="22.708" style="fill:#DB976A;" width="5.686" height="12.92"/>
+		<rect x="35.37" y="22.708" style="fill:#CC8F60;" width="5.684" height="12.92"/>
+	</g>
+	<g>
+		<rect x="18.315" y="13.923" style="fill:#EAAE68;" width="5.685" height="21.705"/>
+		<rect x="24" y="13.923" style="fill:#D8A55E;" width="5.685" height="21.705"/>
+	</g>
+	
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;" x1="24" y1="17.023" x2="24" y2="21.158"/>
+	
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;" x1="11.597" y1="22.708" x2="11.597" y2="26.843"/>
+	
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;" x1="13.665" y1="22.708" x2="13.665" y2="26.843"/>
+	
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;" x1="33.302" y1="25.809" x2="33.302" y2="29.943"/>
+	
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;" x1="35.37" y1="25.809" x2="35.37" y2="29.943"/>
+	
+		<line style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;" x1="37.437" y1="25.809" x2="37.437" y2="29.943"/>
+	<polygon style="fill:#D0DCE2;" points="6.946,19.607 18.315,17.023 18.315,19.607 	"/>
+	<polygon style="fill:#CC8F60;" points="41.054,22.708 29.685,20.038 29.685,22.708 	"/>
+	<polygon style="fill:#EAAE68;" points="18.315,13.923 21.933,12.372 25.421,12.372 29.685,13.923 	"/>
+</g>
+</svg>

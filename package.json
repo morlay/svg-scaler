@@ -1,0 +1,33 @@
+{
+  "name": "svg-scaler",
+  "version": "0.0.0",
+  "description": "help convert svg to png",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "event-stream": "^3.1.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-svg2png": "^0.2.3",
+    "gulp-svgmin": "^0.4.6",
+    "sax": "^0.6.0",
+    "svgpath": "^1.0.5",
+    "vinyl-fs": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/morlay/svg-scaler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morlay/svg-scaler/issues"
+  },
+  "homepage": "https://github.com/morlay/svg-scaler"
+}
