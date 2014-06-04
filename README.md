@@ -1,5 +1,8 @@
 ## SVG Scaler
 
+[![Build Status](https://travis-ci.org/morlay/svg-scaler.svg?branch=master)](https://travis-ci.org/morlay/svg-scaler)
+[![Dependencies](https://david-dm.org/morlay/gulp-workflow.png)](https://david-dm.org/morlay/svg-scaler
+
 Scale svg size；
 
 ## Usage
@@ -12,11 +15,11 @@ Scale svg size；
 
 ## options
 
-### `isSvgo`
+### `noSvgo`
 
-`type:boolean`, default is `true`, if you want remain more detail, please set it `false`;
+`type:boolean`, default is `false`, if you want remain more detail, please set it `true`;
 
-### `width` or `height`
+### `width`
 
 `type:number`, will make the svg scale to the size by the number, will fix to square, unity all svg files to same size.
 

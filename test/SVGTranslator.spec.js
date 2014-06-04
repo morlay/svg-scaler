@@ -80,5 +80,66 @@ describe('SVGTranslator Node Translate', function () {
 
     });
 
+    it('svgCenterScale center y', function () {
+
+        var node = {
+            name: 'svg',
+            attributes: {
+                width: '400px',
+                height: '200px'
+            }
+        };
+
+        svgTranslator.options.width = 500;
+
+        svgTranslator.svgCenterScale(node);
+
+        assert.equal(node.attributes.width, 500);
+        assert.equal(node.attributes.height, 500);
+        assert.equal(svgTranslator.dy, (400 - 200) / 2 * 500 / 400);
+
+    });
+
+    it('svgCenterScale center x', function () {
+
+        var node = {
+            name: 'svg',
+            attributes: {
+                width: '200px',
+                height: '400px'
+            }
+        };
+
+        svgTranslator.options.width = 500;
+
+        svgTranslator.svgCenterScale(node);
+
+        assert.equal(node.attributes.width, 500);
+        assert.equal(node.attributes.height, 500);
+        assert.equal(svgTranslator.dx, (400 - 200) / 2 * 500 / 400);
+
+    });
+
+    it('svgCenterScale have been center', function () {
+
+        var node = {
+            name: 'svg',
+            attributes: {
+                width: '400',
+                height: '400'
+            }
+        };
+
+        svgTranslator.options.width = 500;
+
+        svgTranslator.svgCenterScale(node);
+
+        assert.equal(node.attributes.width, 500);
+        assert.equal(node.attributes.height, 500);
+        assert.equal(svgTranslator.dx, 0);
+        assert.equal(svgTranslator.dy, 0);
+
+    });
+
 
 });
