@@ -1,5 +1,4 @@
 var gulp = require('vinyl-fs');
-var es = require('event-stream');
 var svgmin = require('gulp-svgmin');
 var svgScaler = require('./lib/svg-scaler');
 
@@ -7,34 +6,49 @@ var svgScaler = require('./lib/svg-scaler');
 module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-svg2png');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    var sizes = ['64', '128', '256', '512'];
+    grunt.config('clean.dest', {
+        src: ['./dest']
+    });
+
+    var sizes = ['16', '32', '64', '128', '256', '512'];
 
     grunt.registerTask('svg2pngs', function () {
 
-        var self = this;
+        var done = this.async();
+        var svg2pngFiles = [];
+
+        var cnt = 0;
 
         sizes.forEach(function (size) {
+
+            svg2pngFiles.push({
+                src: ['dest/svg/' + size + '/*.svg'],
+                dest: 'dest/png/' + size
+
+            });
+
             gulp.src('src/*.svg')
                 .pipe(svgmin())
                 .pipe(svgScaler({ width: size}))
-                .pipe(gulp.dest('./dest/svg/' + size))
-                .on('close', function () {
-                    grunt.config('svg2png.' + size, {
-                        files: [
-                            {
-                                src: ['dest/svg/' + size + '/*.svg'],
-                                dest: 'dest/png/' + size
-                            }
-                        ]
-                    });
-                    grunt.task.run('svg2png:' + size);
+                .pipe(gulp.dest('dest/svg/' + size))
+                .on('end', function () {
+                    cnt++;
+                    if (cnt === size.length) {
+                        done();
 
-                })
-                .on('end', self.async());
+                        grunt.config('svg2png.all', {
+                            files: svg2pngFiles
+                        });
+                        grunt.task.run('svg2png');
+
+                    }
+                });
         });
+
 
     });
 
-    grunt.registerTask('default', ['svg2pngs']);
+    grunt.registerTask('default', ['clean:dest', 'svg2pngs']);
 };

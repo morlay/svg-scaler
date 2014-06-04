@@ -9,6 +9,7 @@
   "dependencies": {
     "event-stream": "^3.1.5",
     "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.5.0",
     "grunt-svg2png": "^0.2.1",
     "gulp-svgmin": "^0.4.6",
     "sax": "^0.6.0",
@@ -16,8 +17,7 @@
     "vinyl-fs": "^0.2.1"
   },
   "devDependencies": {},
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "repository": {
