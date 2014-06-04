@@ -1,6 +1,5 @@
 var gulp = require('vinyl-fs');
-var svgscaler = require('./lib/svg-scaler');
-
+var svgscaler = require('./index');
 
 module.exports = function (grunt) {
 
@@ -8,7 +7,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.config('clean.dest', {
-        src: ['./dest']
+        src: ['./example/dest']
     });
 
     var sizes = ['16', '32', '64', '128', '256', '512'];
@@ -23,14 +22,13 @@ module.exports = function (grunt) {
         sizes.forEach(function (size) {
 
             svg2pngFiles.push({
-                src: ['dest/svg/' + size + '/*.svg'],
-                dest: 'dest/png/' + size
-
+                src: ['example/dest/svg/' + size + '/*.svg'],
+                dest: 'example/dest/png/' + size
             });
 
-            gulp.src('src/*.svg')
+            gulp.src('example/src/*.svg')
                 .pipe(svgscaler({ width: size}))
-                .pipe(gulp.dest('dest/svg/' + size))
+                .pipe(gulp.dest('example/dest/svg/' + size))
                 .on('end', function () {
                     cnt++;
                     if (cnt === size.length) {
