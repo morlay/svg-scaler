@@ -1,7 +1,7 @@
 ## SVG Scaler
 
 [![Build Status](https://travis-ci.org/morlay/svg-scaler.svg?branch=master)](https://travis-ci.org/morlay/svg-scaler)
-[![Dependencies](https://david-dm.org/morlay/gulp-workflow.png)](https://david-dm.org/morlay/svg-scaler
+[![Dependencies](https://david-dm.org/morlay/svg-scaler.png)](https://david-dm.org/morlay/svg-scaler)
 
 Scale svg size；
 
