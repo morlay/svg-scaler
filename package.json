@@ -21,8 +21,8 @@
   "scripts": {
     "test": "mocha ./test/*.spec.js -R spec"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "morlay",
+  "license": "WTFPL",
   "repository": {
     "type": "git",
     "url": "git://github.com/morlay/svg-scaler.git"
