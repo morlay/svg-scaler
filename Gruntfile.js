@@ -1,6 +1,5 @@
 var gulp = require('vinyl-fs');
-var svgmin = require('gulp-svgmin');
-var svgScaler = require('./lib/svg-scaler');
+var svgscaler = require('./lib/svg-scaler');
 
 
 module.exports = function (grunt) {
@@ -30,8 +29,7 @@ module.exports = function (grunt) {
             });
 
             gulp.src('src/*.svg')
-                .pipe(svgmin())
-                .pipe(svgScaler({ width: size}))
+                .pipe(svgscaler({ width: size}))
                 .pipe(gulp.dest('dest/svg/' + size))
                 .on('end', function () {
                     cnt++;
