@@ -1,4 +1,5 @@
 var gulp = require('vinyl-fs');
+var rename = require('gulp-rename');
 var svgscaler = require('./index');
 
 module.exports = function (grunt) {
@@ -17,6 +18,8 @@ module.exports = function (grunt) {
         var done = this.async();
         var svg2pngFiles = [];
 
+        var pngFiles = [];
+
         var cnt = 0;
 
         sizes.forEach(function (size) {
@@ -28,6 +31,9 @@ module.exports = function (grunt) {
 
             gulp.src('example/src/*.svg')
                 .pipe(svgscaler({ width: size}))
+                .pipe(rename(function (path) {
+                    pngFiles.push(size + '/' + path.basename + '.png');
+                }))
                 .pipe(gulp.dest('example/dest/svg/' + size))
                 .on('end', function () {
                     cnt++;
@@ -39,6 +45,8 @@ module.exports = function (grunt) {
                         });
                         grunt.task.run('svg2png');
 
+                        imagePreview(pngFiles)
+
                     }
                 });
         });
@@ -47,4 +55,13 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('default', ['clean:dest', 'svg2pngs']);
+
+
+    function imagePreview(pngFiles) {
+        grunt.file.write('example/dest/preview.html', pngFiles.map(function (fileName) {
+            return '<img src="png/' + fileName + '"/>';
+        }).join(''))
+    }
+
 };
+
