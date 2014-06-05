@@ -96,7 +96,7 @@ describe('SVGTranslator Node Translate', function () {
 
         assert.equal(node.attributes.width, 500);
         assert.equal(node.attributes.height, 500);
-        assert.equal(svgTranslator.dy, (400 - 200) / 2 * 500 / 400);
+        assert.equal(svgTranslator.dy, (400 - 200) / 2);
 
     });
 
@@ -116,7 +116,7 @@ describe('SVGTranslator Node Translate', function () {
 
         assert.equal(node.attributes.width, 500);
         assert.equal(node.attributes.height, 500);
-        assert.equal(svgTranslator.dx, (400 - 200) / 2 * 500 / 400);
+        assert.equal(svgTranslator.dx, (400 - 200) / 2);
 
     });
 

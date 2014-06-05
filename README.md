@@ -7,6 +7,10 @@ Scale svg size；
 
 ## Usage
 
+`npm install svg-scaler`
+
+ands
+
      var svgscaler = require('svg-scaler');
 
      gulp.src('src/*.svg')

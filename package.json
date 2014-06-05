@@ -1,6 +1,6 @@
 {
   "name": "svg-scaler",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "help convert svg to png",
   "main": "index.js",
   "dependencies": {
