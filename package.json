@@ -6,9 +6,9 @@
   "dependencies": {
     "event-stream": "^3.1.5",
     "q": "^1.0.1",
-    "sax": "^0.6.0",
-    "svgo": "^0.4.4",
-    "svgpath": "^1.0.5"
+    "sax": "^0.6.1",
+    "svgo": "^0.4.5",
+    "svgpath": "^1.0.7"
   },
   "devDependencies": {
     "chai": "^1.9.1",
